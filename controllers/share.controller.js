@@ -32,7 +32,7 @@ export const retrieveFile = async (req, res) => {
       res.status(404).json({ message: "File not found" })
       return
     }
-    res.status(200).json({ message: `id: ${id}, text: ${file.text}` })  
+    res.status(200).json({ data: `id: ${id}, text: ${file.text}` })  
   } catch (error) {
     res.status(500).json({ message: "Internal server rror" })
   }
