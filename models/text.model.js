@@ -11,6 +11,11 @@ const textSchema = new Schema({
     text: {
         type: String,
         required: true
+    }, 
+    createdAt: {
+        type: Date,
+        default: new Date(),
+        expires: 300
     }
 });
 
